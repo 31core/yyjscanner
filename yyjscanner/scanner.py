@@ -23,12 +23,13 @@ def is_success(num):
         return True
     return False
 
-print("Scanning...")
-for i in range(1000):
-    sys.stdout.write("\r")
-    sys.stdout.flush()
-    t = time.time() #Timestamp before scan
-    if is_success(i) == True:
-        print(f"info: \"%s\" exist."%(username + (3 - len(str(i))) * "0" + str(i)))
-    sys.stdout.write(f"{i} of 999 ({round(time.time() - t, 2)} s per item)")
+def main():
+    print("Scanning...")
+    for i in range(1000):
+        sys.stdout.write("\r")
+        sys.stdout.flush()
+        t = time.time() #Timestamp before scan
+        if is_success(i) == True:
+            print(f"info: \"%s\" exist."%(username + (3 - len(str(i))) * "0" + str(i)))
+        sys.stdout.write(f"{i} of 999 ({round(time.time() - t, 2)} s per item)")
 print()
