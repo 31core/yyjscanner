@@ -1,13 +1,13 @@
-## Yunyuejuan account scanner
-### Use
-This script will test all the Yunyuejuan account from 000 to 999 to find out the accessible ones.
+# Yunyuejuan account scanner
+## Usage
+This script will test all the Yunyuejuan accounts from 000 to 999 to find out the accessible ones.
 
-### Install
+## Install
 ```shell
 pip3 install requests
 ```
 
-### API
+## API
 POST this data to `http://sc.yunyuejuan.net/SystemLogin` to check if the account is accessible.
 ```javascript
 {
